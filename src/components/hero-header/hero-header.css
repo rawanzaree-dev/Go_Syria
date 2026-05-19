@@ -1,0 +1,93 @@
+.hero-header {
+    background-image: url("../../images/hero-header.jpg");
+    background-size: cover;
+    background-position: center;
+    height: calc(100vh - 100px);
+    position: relative;
+}
+.hero-header .search-div {
+    background-color: #fff;
+    width: 70%;
+    padding: 5px 5px 5px 10px;
+    border-radius: 30px;
+    position: absolute;
+    left: 50%;
+    top: 70px;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.hero-header .search-div .search-icon {
+    padding-right: 10px;
+    font-size: 18px;
+    color: var(--primary-color);
+}
+.hero-header .search-div div {
+    width: calc(100% - 80px);
+}
+.hero-header .search-div input {
+    width: 80%;
+    border: none;
+    font-size: 18px;
+    caret-color: var(--primary-color);
+}
+.hero-header .search-div .search-btn {
+    color: #fff;
+    background-color: var(--primary-color);
+    border-radius: 20px;
+    border: none;
+    padding: 10px 20px;
+}
+
+.hero-header .titles {
+    position: absolute;
+    bottom: 15px;
+    left: 23%;
+    color: var(--secondary-color);
+}
+.hero-header .titles h2 {
+    font-size: 3em;
+    line-height: .6;
+}
+.hero-header .titles h1 {
+    font-size: 4.5em;
+}
+
+@media (max-width: 767px) {
+    .hero-header .search-div {
+        width: 80%;
+        justify-content: center;
+        border-radius: 20px;
+        padding: 10px 0;
+    }
+    .hero-header .search-div div {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    .hero-header .search-div input,
+    .hero-header .search-div .search-icon {
+        font-size: 16px;
+    }
+    .hero-header .search-div .search-btn {
+        width: 90%;
+        font-size: 12px;
+    }
+    .hero-header .titles {
+        bottom: 15px;
+        left: 8%;
+    }
+}
+@media (min-width: 1439px) {
+    .hero-header .titles {
+        bottom: 150px;
+        left: 27%;
+    }
+    .hero-header .titles h2 {
+        font-size: 4.5em;
+    }
+    .hero-header .titles h1 {
+        font-size: 6em;
+    }
+}

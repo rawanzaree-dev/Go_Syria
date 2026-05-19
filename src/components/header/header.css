@@ -1,0 +1,90 @@
+header {
+    height: 100px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    position: relative;
+}
+header .container {
+    width: 70%;
+    margin: 0 auto;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .container .logo {
+    display: flex;
+    align-items: center;
+}
+header .container .logo .syria-logo {
+    width: 80px;
+    filter: brightness(0) saturate(100%) invert(84%) sepia(51%) saturate(541%) hue-rotate(331deg) brightness(101%) contrast(94%);
+}
+header .container .logo ul {
+    margin-left: -5px;
+}
+header .container .logo ul li:first-of-type {
+    font-size: 21px;
+}
+header .container .logo ul h3 {
+    font-size: 1.7em;
+}
+header .container nav {
+    transition: .5s ease;
+}
+header .container nav ul {
+    display: flex;
+    padding-bottom: 5px;
+}
+header .container nav ul li {
+    font-size: 18px;
+    padding: 10px 15px;
+    cursor: pointer;
+    display: flex;
+    position: relative;
+}
+header .container nav ul li:hover {
+    color: var(--gold-color);
+}
+header .container nav ul li i {
+    margin-right: 6px;
+}
+header .container .header-icon {
+    font-size: 30px;
+    display: none;
+}
+
+@media (max-width: 767px) {
+    header .container {
+        width: 80%;
+    }
+    header .container nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--primary-color);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    header .container nav ul {
+        flex-direction: column;
+        gap: 5px;
+    }
+    header .container nav ul li:not(:last-child)::after {
+        content: "";
+        width: 100%;
+        height: 2px;
+        background-color: var(--secondary-color);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+    header .container .header-icon {
+        display: block;
+    }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+    header .container {
+        width: 90%;
+    }
+}
