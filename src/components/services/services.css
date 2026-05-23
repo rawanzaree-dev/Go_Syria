@@ -1,6 +1,8 @@
+.services {
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
 .services .container {
-    width: 80%;
-    margin: 20px auto 200px;
     padding: 10px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));

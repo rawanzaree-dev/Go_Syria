@@ -3,11 +3,9 @@ header {
     background-color: var(--primary-color);
     color: var(--secondary-color);
     position: relative;
+    padding-block: 10px;
 }
 header .container {
-    width: 70%;
-    margin: 0 auto;
-    padding: 10px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -31,6 +29,7 @@ header .container .logo ul h3 {
 }
 header .container nav {
     transition: .5s ease;
+    z-index: 1;
 }
 header .container nav ul {
     display: flex;
@@ -55,9 +54,6 @@ header .container .header-icon {
 }
 
 @media (max-width: 767px) {
-    header .container {
-        width: 80%;
-    }
     header .container nav {
         position: absolute;
         top: 100%;
@@ -81,10 +77,5 @@ header .container .header-icon {
     }
     header .container .header-icon {
         display: block;
-    }
-}
-@media (min-width: 768px) and (max-width: 1023px) {
-    header .container {
-        width: 90%;
     }
 }
