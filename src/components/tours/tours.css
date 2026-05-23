@@ -1,0 +1,80 @@
+.tours {
+    margin-block: 30px;
+}
+.tours .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 50px;
+}
+.tours .card {
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.tours .card:hover {
+    border: 2px solid var(--secondary-color);
+}
+.tours .card img {
+    max-width: calc(100% + 1px);
+    border-radius: 10px 10px 0 0;
+}
+.tours .card .content {
+    padding: 25px 10px 15px;
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+    position: relative;
+}
+.tours .card .content .duration {
+    font-size: 14px;
+    margin-block: 20px;
+}
+.tours .card .content .rating {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.tours .card .content .rating .star {
+    color: var(--gold-color);
+    margin-right: 4px;
+    font-size: 18px;
+}
+.tours .card .content .price {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-block: 20px;
+}
+.tours .card .content .price p {
+    color: #f00;
+    font-size: 22px;
+    font-weight: 700;
+}
+.tours .card .content .rating span,
+.tours .card .content .price span {
+    font-size: 14px;
+    color: #808080;
+}
+.tours .card .content .card-btn {
+    width: 100%;
+    background-color: var(--primary-color);
+    color: var(--gold-color);
+    padding-block: 8px;
+    border: none;
+    border-radius: 5px;
+    font-size: 17px;
+}
+.tours .card .content .label {
+    position: absolute;
+    top: -15px;
+    left: 10px;
+    background-color: var(--secondary-color);
+    color: #fff;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
