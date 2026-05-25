@@ -1,0 +1,39 @@
+.sort-section {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+.sort-section .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.sort-section .tours-number {
+    display: flex;
+    gap: 10px;
+    color: #808080;
+}
+.sort-section select {
+    width: 180px;
+    border: none;
+    padding: 10px;
+}
+.sort-section select:focus {
+    outline: none;
+}
+
+@media (max-width: 767px) {
+    .sort-section .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .sort-section .tours-number {
+        order: 2;
+        align-self: flex-end;
+    }
+}
+@media (max-width: 374px) {
+    .sort-section select {
+        width: 150px;
+    }
+}
