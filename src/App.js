@@ -9,6 +9,7 @@ import Sort from "./components/sort/Sort";
 import { useState } from 'react';
 import { pagination } from './utils/pagination.js';
 import { sorting } from './utils/sorting.js';
+import Banner from './components/banner/Banner';
 
 function App() {
 
@@ -29,6 +30,7 @@ function App() {
       <Sort length={toursList.length} sortItem={sortItem} setSortItem={setSortItem} />
       <Tours toursList={pageTours} />
       <Pagination pages={pages} currentPage={currentPage} setCurrentPage={setCurrentPage} />
+      <Banner />
     </div>
   );
 }

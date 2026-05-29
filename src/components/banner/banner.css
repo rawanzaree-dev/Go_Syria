@@ -1,0 +1,39 @@
+.banner {
+    padding-inline: 10px;
+    margin: 60px auto;
+}
+.banner .container {
+    height: 260px;
+    background-image: url(../../images/banner.jpg);
+    background-size: cover;
+    border-radius: 20px;
+    position: relative;
+}
+.banner .overlay {
+    border-radius: 20px;
+}
+.banner h2 {
+    position: absolute;
+    top: 50%;
+    left: 40px;
+    transform: translate(0, -50%);
+    color: var(--secondary-color);
+    font-size: 45px;
+}
+.banner h2 span {
+    display: block;
+    font-size: 55px;
+}
+@media (max-width: 767px) {
+    .banner .container {
+        background-position: right;
+    }
+    .banner h2 {
+        font-size: 35px;
+        left: 20px;
+        top: 60%;
+    }
+    .banner h2 span {
+        font-size: 45px;
+    }
+}
