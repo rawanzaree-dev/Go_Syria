@@ -10,6 +10,7 @@ import { useState } from 'react';
 import { pagination } from './utils/pagination.js';
 import { sorting } from './utils/sorting.js';
 import Banner from './components/banner/Banner';
+import NewsLetter from './components/news-letter/NewsLetter';
 
 function App() {
 
@@ -31,6 +32,7 @@ function App() {
       <Tours toursList={pageTours} />
       <Pagination pages={pages} currentPage={currentPage} setCurrentPage={setCurrentPage} />
       <Banner />
+      <NewsLetter />
     </div>
   );
 }
