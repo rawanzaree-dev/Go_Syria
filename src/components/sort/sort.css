@@ -1,6 +1,5 @@
 .sort-section {
-    margin-top: 30px;
-    margin-bottom: 50px;
+    padding-block: 15px;
 }
 .sort-section .container {
     display: flex;

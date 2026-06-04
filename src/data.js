@@ -228,7 +228,7 @@ export const languages = [
   },
   {
     id: 3,
-    value: "Arabic (Gulf)",
+    value: "Arabic (Syria)",
   },
   {
     id: 4,
@@ -268,10 +268,6 @@ export const languages = [
   },
   {
     id: 13,
-    value: "Kurdi",
-  },
-  {
-    id: 14,
     value: "Chinees",
   },
 ];
@@ -279,7 +275,7 @@ export const languages = [
 export const currencies = [
   {
     id: 1,
-    value: "UAE (Dirham)",
+    value: "Syria (Lira)",
   },
   {
     id: 2,

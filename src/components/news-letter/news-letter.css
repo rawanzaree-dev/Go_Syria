@@ -1,5 +1,5 @@
 .news-letter {
-    margin-bottom: 30px;
+    padding-block: 30px;
 }
 .news-letter .container {
     display: flex;

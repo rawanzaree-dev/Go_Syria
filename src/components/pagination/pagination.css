@@ -1,5 +1,6 @@
 .pagination {
     padding-inline: 15px;
+    padding-bottom: 30px;
 }
 .pagination .container {
     width: fit-content;
