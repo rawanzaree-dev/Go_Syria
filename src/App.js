@@ -11,6 +11,7 @@ import { pagination } from './utils/pagination.js';
 import { sorting } from './utils/sorting.js';
 import Banner from './components/banner/Banner';
 import NewsLetter from './components/news-letter/NewsLetter';
+import Footer from './components/footer/Footer.jsx';
 
 function App() {
 
@@ -33,6 +34,7 @@ function App() {
       <Pagination pages={pages} currentPage={currentPage} setCurrentPage={setCurrentPage} />
       <Banner />
       <NewsLetter />
+      <Footer />
     </div>
   );
 }

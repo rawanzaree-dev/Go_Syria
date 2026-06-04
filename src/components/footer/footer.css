@@ -1,0 +1,76 @@
+footer {
+    min-height: 350px;
+    padding-block: 30px;
+    background-color: var(--primary-color);
+}
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+footer .col .select-box {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+footer .col .select-box label {
+    color: var(--gold-color);
+    font-size: 18px;
+}
+footer .col .select-box select {
+    padding: 8px 15px;
+    border-radius: 8px;
+}
+footer .col .select-box select:focus {
+    outline: none;
+}
+footer .col h3 {
+    color: var(--gold-color);
+    margin-bottom: 20px;
+}
+footer .col ul li {
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+}
+footer .col ul li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+footer .col .icons {
+    display: flex;
+    justify-content: space-between;
+    margin-block: 20px;
+}
+footer .col .icons .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+footer .col .icons .icon i {
+    font-size: 22px;
+}
+footer .col .copyright {
+    color: var(--gold-color);
+}
+
+@media (max-width: 424px) {
+    footer .col {
+        width: 100%;
+    }
+    footer .col .icons {
+        justify-content: center;
+        gap: 10px;
+    }
+    footer .col h3,
+    footer .col ul li,
+    footer .col .copyright {
+        text-align: center;
+    }
+}
