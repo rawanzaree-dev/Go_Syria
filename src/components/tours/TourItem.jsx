@@ -1,4 +1,5 @@
 import Rating from "./Rating";
+import { Link } from "react-router-dom";
 
 export default function TourItem({tour}) {
     return (
@@ -15,7 +16,7 @@ export default function TourItem({tour}) {
                     <p>From ${tour.priceFrom}</p>
                     <span>per person</span>
                 </div>
-                <button className="card-btn">See More</button>
+                <Link to={`/tour/${tour.id}`} className="card-btn">See More</Link>
                 <div className="label">Adventure</div>
             </div>
         </div>
