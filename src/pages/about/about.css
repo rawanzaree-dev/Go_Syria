@@ -1,0 +1,19 @@
+.about-us {
+    padding: 30px;
+}
+.about-us h1 {
+    width: fit-content;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #000;
+    margin-bottom: 15px;
+}
+.about-us .info {
+    line-height: 2;
+    font-weight: 500;
+    font-size: 18px;
+}
+.about-us .info span {
+    font-weight: 700;
+}
+
+
