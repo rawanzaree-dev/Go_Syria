@@ -13,7 +13,7 @@ export default function Pagination({pages, currentPage, setCurrentPage}) {
                 <button className="prev" onClick={() => setCurrentPage(prev => prev - 1)} 
                         disabled={currentPage === 1}>Previous</button>
                 {pagesNumbers.map(page => (
-                    <div className={currentPage === page ? "pagesNumbers active" : "pagesNumbers"} 
+                    <div key={page} className={currentPage === page ? "pagesNumbers active" : "pagesNumbers"} 
                         onClick={() =>{setCurrentPage(page)}}>
                         {page}
                     </div>

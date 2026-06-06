@@ -2,7 +2,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import './App.css';
 import Header from './components/header/Header';
-import Footer from './components/footer/Footer.jsx';
 import Home from './pages/home/Home.jsx';
 import About from './pages/about/About.jsx';
 import Login from './pages/forms/Login.jsx';
@@ -20,7 +19,6 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/tour/:id" element={<SingleTour />} />
       </Routes>
-      <Footer />
     </BrowserRouter>
   );
 }

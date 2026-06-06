@@ -1,4 +1,4 @@
-export default function SingleTour({priceFrom}) {
+export default function SingleTour({ priceFrom }) {
   return (
     <div className="booking">
       <div className="first-phrase">
@@ -14,7 +14,7 @@ export default function SingleTour({priceFrom}) {
           <button>Book Now</button>
         </div>
         <div className="second-phrase">
-          <i class="bi bi-calendar-check"></i>
+          <i className="bi bi-calendar-check"></i>
           Reserve now and pay later to book your spot and pay nothing today
         </div>
       </div>

@@ -5,6 +5,7 @@ import Pagination from "../../components/pagination/Pagination";
 import Sort from "../../components/sort/Sort";
 import Banner from '../../components/banner/Banner';
 import NewsLetter from '../../components/news-letter/NewsLetter';
+import Footer from '../../components/footer/Footer.jsx';
 import {toursList} from "../../data.js";
 import { useState } from 'react';
 import { pagination } from '../../utils/pagination.js';
@@ -29,6 +30,7 @@ export default function Home() {
             <Pagination pages={pages} currentPage={currentPage} setCurrentPage={setCurrentPage} />
             <Banner />
             <NewsLetter />
+            <Footer />
         </>
     );
 }

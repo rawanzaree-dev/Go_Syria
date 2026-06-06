@@ -6,7 +6,7 @@ export default function Tours({toursList}) {
         <div className="tours">
             <div className="container">
                 {toursList.map((tour) =>
-                        <TourItem tour={tour} />
+                        <TourItem key={tour.id} tour={tour} />
                     )
                 }
             </div>
