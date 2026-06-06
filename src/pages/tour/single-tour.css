@@ -1,0 +1,168 @@
+.tour-page {
+    margin: 30px;
+}
+.tour-page .breadcrumbs {
+    color: #808080;
+    margin-bottom: 15px;
+}
+.tour-page .adventure-label {
+    width: fit-content;
+    background-color: var(--secondary-color);
+    color: #fff;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.tour-page h1 {
+    margin-bottom: 15px;
+}
+.tour-page .info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+.tour-page .info .rating {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.tour-page .info .rating .star {
+    color: var(--gold-color);
+    margin-right: 4px;
+    font-size: 18px;
+}
+.tour-page .info .rating span {
+    font-size: 14px;
+    color: #808080;
+}
+.tour-page .info .provider {
+    font-weight: 500;
+}
+.tour-page .info .provider span {
+    color: var(--primary-color);
+}
+.tour-page .img-and-booking-wrapper {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 15px;
+}
+.tour-page .img-and-booking-wrapper img {
+    max-width: 100%;
+    flex: 1;
+    border-radius: 10px;
+}
+.tour-page .img-and-booking-wrapper .booking {
+    border: 1px solid var(--secondary-color);
+    align-self: center;
+    flex: 1;
+}
+.tour-page .img-and-booking-wrapper .booking .first-phrase {
+    color: var(--gold-color);
+    background-color: rgba(0, 122, 61, 0.5);
+    padding: 10px;
+}
+.tour-page .img-and-booking-wrapper .booking .first-phrase p {
+    justify-self: flex-end;
+    font-weight: 500;
+    font-size: 18px;
+}
+.tour-page .img-and-booking-wrapper .booking .content {
+    padding: 10px;
+}
+.tour-page .img-and-booking-wrapper .booking .content .booking-label {
+    width: fit-content;
+    color: var(--primary-color);
+    background-color:  rgb(247, 197, 82, 0.5);
+    font-weight: 600;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+.tour-page .img-and-booking-wrapper .booking .content .book-now {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+.tour-page .img-and-booking-wrapper .booking .content .book-now .price p {
+    color: #f00;
+    font-size: 22px;
+    font-weight: 700;
+}
+.tour-page .img-and-booking-wrapper .booking .content .book-now .price span {
+    color: #808080;
+}
+.tour-page .img-and-booking-wrapper .booking .content .book-now button {
+    padding: 10px 25px;
+    color: var(--gold-color);
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 40px;
+    font-weight: 600;
+    font-size: 18px;
+    margin-inline: auto;
+}
+.tour-page .img-and-booking-wrapper .booking .content .second-phrase i {
+    font-size: 25px;
+    color: var(--primary-color);
+    margin-right: 8px;
+}
+.tour-page .description {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+.tour-page .activity h2 {
+    margin-bottom: 20px;
+}
+.tour-page .activity .content .item {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.tour-page .activity .content .item i {
+    font-size: 25px;
+}
+.tour-page .activity .content .item .text h3 {
+    margin-bottom: 10px;
+}
+.tour-page .activity .content .item .text p {
+    padding-left: 10px;
+    color: #808080;
+    font-size: 18px;
+}
+
+@media (max-width: 767px) {
+    .tour-page h1 {
+        font-size: 28px;
+    }
+    .tour-page .info .provider {
+        font-weight: normal;
+    }
+    .tour-page .img-and-booking-wrapper {
+        flex-wrap: wrap-reverse;
+    }
+    .tour-page .img-and-booking-wrapper .booking .content .book-now {
+        display: block;
+        text-align: center;
+    }
+    .tour-page .img-and-booking-wrapper .booking .content .book-now .price p {
+        font-size: 25px;
+    }
+    .tour-page .img-and-booking-wrapper .booking .content .book-now button {
+        width: calc(100% - 40px);
+        margin-top: 20px;
+    }
+}
+@media (max-width: 1038px) {
+    .tour-page .img-and-booking-wrapper .booking .content .book-now .price {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+}
