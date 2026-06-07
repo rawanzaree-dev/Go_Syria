@@ -1,5 +1,6 @@
 .about-us {
     padding: 30px;
+    min-height: calc(100vh - 100px);
 }
 .about-us h1 {
     width: fit-content;
@@ -15,5 +16,3 @@
 .about-us .info span {
     font-weight: 700;
 }
-
-

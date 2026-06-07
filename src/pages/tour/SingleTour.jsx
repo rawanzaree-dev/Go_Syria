@@ -2,7 +2,6 @@ import { useParams } from "react-router-dom";
 import { toursList } from "../../data";
 import Rating from "../../components/tours/Rating";
 import Booking from "./Booking";
-import Footer from "../../components/footer/Footer";
 import "./single-tour.css";
 
 export default function SingleTour() {
@@ -10,7 +9,6 @@ export default function SingleTour() {
     tour = toursList.find((t) => t.id === +id);
 
   return (
-    <>
       <div className="tour-page">
         <div className="breadcrumbs">
           Syria <i className="bi bi-chevron-right"></i>
@@ -93,7 +91,5 @@ export default function SingleTour() {
           </div>
         </div>
       </div>
-      <Footer />
-    </>
   );
 }
